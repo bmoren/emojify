@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Emojistravaganza!</title>
+    <link rel="stylesheet" href="main.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" media="screen" title="no title">
+  </head>
+  <body>
+
+    <div class="button">
+      <button id="emoji">EMOJIFY!</button>
+    </div>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+  <script src="../emojify.js" charset="utf-8"></script>
+  <script type="text/javascript">
+
+    //onclick, emojify('spin', 300);
+
+    // emojify('spin', 50)
+
+    var button = document.getElementById('emoji')
+    button.addEventListener('click', function(){
+
+      // emojify('animated hinge infinite', 50);
+      emojify('spin', 50);
+
+
+    });
+
+  </script>
+</html>

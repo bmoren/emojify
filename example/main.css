@@ -1,0 +1,39 @@
+
+body,
+html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button button {
+  font-size: 5vw;
+  border-radius: 1vw;
+  padding: 3vw;
+  color: white;
+  z-index: 9999;
+}
+
+/* define an animation class to attach to the emojis! */
+
+.spin {
+  animation: cssAnimation 2s infinite ease;
+}
+
+@keyframes cssAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
