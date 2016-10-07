@@ -35,16 +35,6 @@ function emojify(cssClass, number, sz){
 
     document.body.appendChild(element);
 
-
-    // var element = $( '<div class="' + cssClass + '">' + emojiArray[randEmoji] +  '</div>').css({
-    //   'position': 'absolute',
-    //   'font-size': Math.round(Math.random() * emojiMaxSize) + 'px',
-    //   'top': t,
-    //   'left' : l
-    // })
-    //
-    // $('body').append(element)
-
   }
 
 
