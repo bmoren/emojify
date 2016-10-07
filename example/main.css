@@ -1,6 +1,6 @@
 
 body,
-html{
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -37,3 +37,4 @@ html{
     transform: rotate(360deg);
   }
 }
+
