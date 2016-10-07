@@ -1,6 +1,6 @@
 # emojify
 
-![emoji](emoji.png)
+![emoji](emoji1.png)
 
 a silly function for populating the screen with emoji. plays well with [animate.css](https://daneden.github.io/animate.css/)
 
