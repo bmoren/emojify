@@ -4,14 +4,15 @@ function emojify(cssClass, number, sz){
 
   for(var i = 0; i < number; i++){
 
+    //edge detection
     var t = Math.random() * window.innerHeight ;
     var l = Math.random() * window.innerWidth ;
 
-    if(t > window.innerHeight- (sz + sz/2) ){
-      t = window.innerHeight - (sz + sz/2)
+    if(t > window.innerHeight- (sz *2) ){
+      t = window.innerHeight - (sz *2)
     }
-    if(l >window.innerWidth - (sz + sz/2) ){
-      l = window.innerWidth - (sz + sz/2)
+    if(l >window.innerWidth - (sz *2) ){
+      l = window.innerWidth - (sz *2)
     }
     if(t < sz/2){
       t = sz/2
@@ -20,11 +21,13 @@ function emojify(cssClass, number, sz){
       l = sz/2
     }
 
+    //gen element
     var randEmoji = Math.round(Math.random() * emojiArray.length)
 
     element = document.createElement('div')
     element.innerHTML = emojiArray[randEmoji]
     element.id = i ;
+    element.className = cssClass
     element.style.position = 'absolute'
     element.style.top = t + 'px'
     element.style.left = l + 'px'
