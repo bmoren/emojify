@@ -1,5 +1,7 @@
 # emojify
 
+![emoji](emoji.png)
+
 a silly function for populating the screen with emoji. plays well with [animate.css](https://daneden.github.io/animate.css/)
 
 tip: add `z-index:9999;` to your animation class
